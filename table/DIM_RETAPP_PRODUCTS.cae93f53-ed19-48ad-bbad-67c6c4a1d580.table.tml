@@ -1,0 +1,35 @@
+guid: cae93f53-ed19-48ad-bbad-67c6c4a1d580
+table:
+  name: DIM_RETAPP_PRODUCTS
+  db: RETAIL_APPAREL_TEST
+  schema: PUBLIC
+  db_table: DIM_RETAPP_PRODUCTS
+  connection:
+    name: Connection_git_version_control
+    fqn: dc4f91aa-beab-43d2-884c-16860722c6a0
+  columns:
+  - name: PRODUCTID
+    db_column_name: PRODUCTID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PRODUCTNAME
+    db_column_name: PRODUCTNAME
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCTTYPE
+    db_column_name: PRODUCTTYPE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  properties:
+    sage_config:
+      is_sage_enabled: false
